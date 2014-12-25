@@ -9,7 +9,7 @@ class ArticlesController < ApplicationController
     @response = HTTParty.get("http://rubygems.org/api/v1/versions/httparty.json")
     client = Soundcloud.new(:client_id => '3c3083f5798c318b3c934890800578e0')
     track_url = 'http://soundcloud.com/forss/flickermood'
-    embed_info = client.get('/oembed', :url => track_url)
+    @embed_info = client.get('/oembed', :url => track_url)
   end
 
   # GET /articles/1
