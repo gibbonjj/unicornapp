@@ -1,0 +1,7 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: fuckingwork_development
+  pool: 5
+  username: postgres
+  password: 566229
