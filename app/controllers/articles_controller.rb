@@ -5,6 +5,7 @@ class ArticlesController < ApplicationController
   # GET /articles.json
   def index
     @articles = Article.all
+    @response = HTTParty.get("http://rubygems.org/api/v1/versions/httparty.json")
   end
 
   # GET /articles/1
